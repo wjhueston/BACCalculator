@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="styles.css" rel ="stylesheet">
+    <title>Blood Alcohol Calculator</title>
+</head>
+<body>
+<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+        crossorigin="anonymous"></script>
+<script src="code.js"></script>
+<h1>Blood Alcohol Content Calculator</h1>
+<label for="beerCount">How many beers have you had?</label><br>
+<input type="number" id="beerCount" min="0"><br><br>
+<label for="wineCount">How many glasses of wine have you had?</label><br>
+<input type="number" id="wineCount" min="0"><br><br>
+<label for="shotCount">How many shots of high-proof alcohol have you had?</label><br>
+<input type="number" id="shotCount" min="0"><br><br>
+<label for="weightPounds">I weigh</label>
+<input type="number" id="weightPounds" min="80" max="650"> pounds.<br><br>
+<label for="hoursDrinking">I started drinking</label>
+<input type="number" id="hoursDrinking" min="0" max="18"> hours ago.
+<button id="calcBAC">Calculate BAC</button>
+<p class="resultBAC">Your Blood Alcohol Content is <span id="BAC"></span>%.</p>
+<p class="illegal">It is illegal in the state of Wisconsin to drive with your current Blood Alcohol level.</p>
+</body>
+</html>
